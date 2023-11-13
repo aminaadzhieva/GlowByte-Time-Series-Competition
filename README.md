@@ -33,10 +33,13 @@
 - test_dataset.csv,train_dataset.csv,holidays_calendar.csv - тестовая, обучающая выборки + календарь праздников
 
   ## Описание решения:
-- Выбран стекинг всех моделей
+- Выбран StackingRegressor для всех моделей
 - Дополнительно сгенерировано 113 признаков: лаговые признаки, длительность светодого дня, флаг праздничного, предпраздничного, и рабочего дней, флаг погоды, порядковый номер года, месяца, недели, дисперсия  для прогнозированной температуры за 24 часа, скользящее среднее таргета, периодическая функция cos, флаг времени суток 
 - Обучение, валидация и выбор лучшего набора гиперпараметров.
 - Предсказание объема энергопотребления обученной моделью делается последовательно на каждый час. Профилактика утечки данных предусмотрена.
 
 Для оценки модели использовалась метрика качества  **MAE**:
 Полученный результат: 6.19
+
+## Использованные библиотеки:
+pandas, matplotlib, seaborn, numpy, joblib, datetime, phik, statsmodels: plot_acf, seasonal_decompose, adfuller; sklearn: GridSearchCV, TimeSeriesSplit, ParameterGrid, Pipeline, mean_absolute_error, mean_absolute_percentage_error, r2_score, StandardScaler, LinearRegression, CountVectorizer, StackingRegressor; LGBMRegressor, re, nltk: word_tokenize.
