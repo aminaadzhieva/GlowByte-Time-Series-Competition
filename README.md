@@ -29,4 +29,14 @@
 - [count_vectorizer.pkl](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/count_vectorizer.pkl) - векторайзер для обработки текста
 - [скрипт предсказания](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/main.py), [обученная модель](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/pipe.pkl)
 - [sun_data.json](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/sun_data.json)  - спарсенные данные о восходе и закате
+- [важность признаков](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/feature-importance.xlsx)
 - test_dataset.csv,train_dataset.csv,holidays_calendar.csv - тестовая, обучающая выборки + календарь праздников
+
+  ## Описание решения:
+- Выбран стекинг всех моделей
+- Дополнителльно сгенерировано 113 признаков: лаговые признаки, длительность светодого дня, флаг праздничного, предпраздничного, и рабочего дней, флаг погоды, порядковый номер года, месяца, недели, дисперсия  для прогнозированной температуры за 24 часа, скользящее среднее таргета, периодическая функция cos, флаг времени суток 
+- Обучение, валидация и выбор лучшего набора гиперпараметров.
+- Предсказание объема энергопотребления обученной моделью делается последовательно на каждый час. Профилактика утечки данных предусмотрена.
+
+Для оценки модели использовалась метрика качества  **MAE**:
+Полученный результат: 6.19
