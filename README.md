@@ -1,4 +1,4 @@
-# GlowByte-Time-Series-competition
+# GlowByte-Time-Series-Competition
 Хакатон по временным рядам от компании "GlowByte" - "Энергетический Оракул".
 
 **Задача:**  
