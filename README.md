@@ -29,4 +29,4 @@
 - [count_vectorizer.pkl](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/count_vectorizer.pkl) - векторайзер для обработки текста
 - [скрипт предсказания](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/main.py), [обученная модель](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/pipe.pkl)
 - [sun_data.json](https://github.com/aminaadzhieva/GlowByte-Time-Series-competition/blob/main/sun_data.json)  - спарсенные данные о восходе и закате
-- [test_dataset.csv],[train_dataset.csv],[holidays_calendar.csv] - тестовая, обучающая выборки + календарь праздников
+- test_dataset.csv,train_dataset.csv,holidays_calendar.csv - тестовая, обучающая выборки + календарь праздников
